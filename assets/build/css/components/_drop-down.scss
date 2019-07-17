@@ -1,0 +1,25 @@
+.dd-nav{
+    li{
+        border-bottom: 1px solid black;
+    }
+    
+    li:last-child{
+        border-bottom: 0;
+    }
+    
+    .child-dd{
+        height: 0;
+        overflow: hidden;
+    }
+
+    .level-1{
+        padding-left: 10px;
+    }
+
+    .level-2{
+        padding-left: 20px;
+    }
+}
+
+
+
