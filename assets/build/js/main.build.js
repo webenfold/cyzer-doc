@@ -5,7 +5,7 @@
 // dropdown class
 
 function dropdown_menu() {
-    $('.dd-nav li').on('click', function () {
+    $('.dd-item').on('click', function () {
         $(this).parents('.parent-dd').find('.child-dd').css('height', 'auto');
     });
 }

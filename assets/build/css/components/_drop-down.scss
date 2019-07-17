@@ -1,7 +1,26 @@
 .dd-nav{
-    li{
-        border-bottom: 1px solid black;
+    ul, li{
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
+
+    li{
+        padding: 10px;
+        border-bottom: 1px solid #999;
+    }
+
+    li.dd-item::after {
+        display: inline-block;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: "";
+        border-top: .3em solid #555;
+        border-right: .3em solid transparent;
+        border-bottom: 0;
+        border-left: .3em solid transparent;
+    }
+    
     
     li:last-child{
         border-bottom: 0;
