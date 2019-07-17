@@ -30,7 +30,14 @@
     .child-dd{
         width: 100%;
         height: 0;
+        max-height: 1000px;
         overflow: hidden;
+        transition: max-height 0.3s;
+    }
+
+    .child-dd.open{
+        height: auto;
+        transition: max-height 0.3s;
     }
 
     .level-1{

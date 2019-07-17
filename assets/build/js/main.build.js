@@ -6,7 +6,9 @@
 
 function dropdown_menu() {
     $('.dd-item').on('click', function () {
-        $(this).parents('.parent-dd').find('.child-dd').css('height', 'auto');
+        var ele = $(this).parents('.parent-dd').find('.child-dd');
+
+        ele.toggleClass('open');
     });
 }
 
