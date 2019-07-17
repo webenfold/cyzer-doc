@@ -32,13 +32,13 @@
         height: 0;
         max-height: 0;
         overflow: hidden;
-        -webkit-transition: max-height 0.3s;
         transition: max-height 0.5s;
     }
 
     .child-dd.open{
         height: auto;
-        transition: max-height 0.3s;
+        max-height: 1000px;
+        transition: max-height 0.5s;
     }
 
     .level-1{
