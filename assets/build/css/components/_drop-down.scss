@@ -11,7 +11,8 @@
     }
 
     li.dd-item::after {
-        display: inline-block;
+        float: right;
+        margin: 15px 0;
         margin-left: .255em;
         vertical-align: .255em;
         content: "";
@@ -27,6 +28,7 @@
     }
     
     .child-dd{
+        width: 100%;
         height: 0;
         overflow: hidden;
     }
@@ -38,6 +40,11 @@
     .level-2{
         padding-left: 20px;
     }
+}
+
+.card-body.dd-nav {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 
