@@ -141,17 +141,20 @@
                 <!-- Side Widget -->
                 <div class="card my-4">
                     <h5 class="card-header">Directory Structure</h5>
-                    <div class="card-body">
-                        <li>Admin
-                            <ul>
-                                <li>Assets
-                                    <ul>
-                                        <li>Bootstrap</li>
-                                        <li>Css</li>
-                                        <li>Cyzer-icons</li>
-                                        <li>Js</li>
-                                        <li>Media</li>
+                    <div class="card-body dd-nav">
+                        <ul class="parent-dd">
+                            <li class="level-1 dd-item">Admin</li>
+                            <ul class="child-dd">
+                                <ul class="parent-dd">
+                                    <li class="level-2 dd-item">Assets</li>
+                                    <ul class="child-dd">
+                                        <li class="level-3 dd-item">Bootstrap</li>
+                                        <li class="level-3 dd-item">Css</li>
+                                        <li class="level-3 dd-item">Cyzer-icons</li>
+                                        <li class="level-3 dd-item">Js</li>
+                                        <li class="level-3 dd-item">Media</li>
                                     </ul>
+                                </ul>
                                 <li>Controllers</li>
                                 <ul>
                                     <li>Ajax</li>
@@ -456,6 +459,7 @@
                                     </ul>
                                 </ul>
                             </ul>
+                        </ul>
                         <!-- <li>Boot</li>
                         <ul>
                             <li>Cyz-shutdown.php</li>
