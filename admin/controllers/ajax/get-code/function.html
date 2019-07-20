@@ -10,6 +10,69 @@
 
     <title>Cyzer - Docs</title>
 
+
+    <!-- For Loader -->
+    <style>
+        .loading-screen {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            z-index: 9999;
+        }
+
+        .loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            transform: translate(-50px, -50px);
+            border-radius: 100%;
+            margin: 0 auto;
+        }
+
+        #loader-1:before,
+        #loader-1:after {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            border: 10px solid transparent;
+            border-top-color: #3498db;
+        }
+
+        #loader-1:before {
+            z-index: 100;
+            animation: spin 1s infinite;
+        }
+
+        #loader-1:after {
+            border: 10px solid #ccc;
+        }
+
+        @keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
     <!-- Bootstrap core CSS -->
     <link href="assets/vendor/bootstrap/scss/bootstrap.min.css" rel="stylesheet">
 
@@ -20,52 +83,10 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Cyzer Docs</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Usage Guide
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                            <a class="dropdown-item" href="#">How to Install Cyzer</a>
-                            <a class="dropdown-item" href="#">Best Practices</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Developers Guide
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                            <a class="dropdown-item" href="#">Directory Structure</a>
-                            <a class="dropdown-item" href="#">Admin Directory</a>
-                            <a class="dropdown-item" href="#">Boot Directory</a>
-                            <a class="dropdown-item" href="#">Comp Directory</a>
-                            <a class="dropdown-item" href="#">Lib Directory</a>
-                            <a class="dropdown-item" href="#">Routing Directory</a>
-                        </div>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Updates</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- loader -->
+    <div class="loading-screen">
+        <div class="loader" id="loader-1"></div>
+    </div>
 
     <!-- Page Content -->
     <div class="container">
@@ -159,26 +180,26 @@
                                         <li>App-deploy</li>
                                         <ul>
                                             <li>
-                                                <a href="#">Upload.php</a>
+                                                <a href="1-upload.html">Upload.php</a>
                                             </li>
                                         </ul>
                                         <li>App-view</li>
                                         <ul>
                                             <li>
-                                                <a href="#">Function.php</a>
+                                                <a href="2-function.html">Function.php</a>
                                             </li>
                                         </ul>
                                         <li>Get-code</li>
                                         <ul>
                                             <li>
-                                                <a href="#">Function.php</a>
+                                                <a href="3-function.html">Function.php</a>
                                             </li>
                                         </ul>
                                     </ul>
                                     <li>Gateway</li>
                                     <ul>
                                         <li>
-                                            <a href="4-login.html">Login.php</a>
+                                            <a href="#">Login.php</a>
                                         </li>
                                         <li>
                                             <a href="#">Logout.php</a>
@@ -496,17 +517,12 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-4 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Cyzer</p>
-        </div>
-        <!-- /.container -->
-    </footer>
+    <footer class="py-4 bg-dark"></footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="assets/vendor/jquery/jquery-3.4.1.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/build/js/main.build.js"></script>
+    <script src="https://cyzer-docs.webenfold.com/assets/vendor/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cyzer-docs.webenfold.com/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cyzer-docs.webenfold.com/assets/build/js/main.build.js"></script>
 
 </body>
 

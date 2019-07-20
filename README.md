@@ -1,1 +1,355 @@
-# cyzer-doc
+# CYZER - Docs.
+![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg?style=flat-square) ![CircleCI](https://img.shields.io/circleci/project/github/barbajs/barba/master.svg?style=flat-square) ![Open Source Lovesvg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103) 
+### What is Cyzer
+Cyzer is an OSS (Open Source Software). It is a minimalistic build PHP Framework for all types of modern application. It follows the MVC (Model View Controller) architecture.
+
+This Doumentaion is all about Cyzer Installation, Setup and it's Structure Information in Detail.
+For more Details about Cyzer - Docs Visit [https://cyzer-docs.webenfold.com](https://cyzer-docs.webenfold.com/) 
+
+## Preamble
+
+Cyzer is built to create all types of web sites to super powerful web applications. It has minimal inbuilt functionality. Every functionality is carefully selected to just provide a bare bone-structure for your project. Minimalistic framework structure helps the application build over Cyzer to consume low server resource and provide better performance to end-user.
+
+Cyzer needs no extra juice! It is compatible with almost all web server as it requires PHP, my SQL and Apache to run. It is lightweight, so any LAMP server can run Cyzer.
+
+Cyzer supports add-ons. You add additional functionalities for your Cyzer application by installing addons/plugins AKA (also known as) external controllers. You can install official, self-created or 3rd party addons for your project. These add-ons extend Cyzer functionalities and make your application modular. Cyzer addons support export, import, editing and update functionality directly from SU (Super User) Panel.
+
+Cyzer is secure by default. But you can follow the below-listed tips for better security
+  - Do Not Install 3rd Party (UnTrusted) Addons
+  - Enable Automatic Updates
+  - Use VPS (Virtual Private Server)
+  - Use strong password for SU Account
+
+## Directory Structure
+
+Cyzer has following directory structure. 
+
+<li>Admin
+    <ul>
+      <li>Assets
+      <ul>
+      <li>Bootstrap</li>
+      <li>Css</li>
+      <li>Cyzer-icons</li>
+      <li>Js</li>
+      <li>Media</li>
+    </ul>
+  <li>Controllers</li>
+    <ul>
+      <li>Ajax</li>
+          <ul>
+      <li>App-deploy</li>
+            <ul>
+      <li>Upload.php</li>
+</ul>
+<li>App-view</li>
+       <ul>
+      <li>Function.php</li>
+      </ul>
+      <li>Get-code</li>
+            <ul>
+      <li>Function.php</li>
+      </ul>
+      </ul>
+      <li>Gateway</li>
+                  <ul>
+      <li>Login.php</li>
+      <li>Logout.php</li>
+      <li>Session-verify.php</li>
+      </ul>
+      <li>Panel</li>
+                        <ul>
+      <li>Application</li>
+                    <ul>
+      <li>Deployment</li>
+                  <ul>
+      <li>Main.php</li>
+      </ul>
+      </ul>
+      <li>Dashboard</li>
+                    <ul>
+      <li>Main.php</li>
+      </ul>
+      <li>Redner</li>
+                 <ul>
+      <li>Nav.php</li>
+      </ul>
+      <li>Setup</li>
+               <ul>
+      <li>Apache</li>
+             <ul>
+      <li>Setup.php</li>
+      </ul>
+<li>DB</li>
+      <ul>
+      <li>Config-constructor.php</li>
+      <li>Setup.php</li>
+      </ul>
+      <li>Su</li>
+         <ul>
+      <li>Config-constructor.php</li>
+      <li>Setup.php</li>
+      </ul>
+           <li>Config-constructor.php</li>
+           </ul>
+           <li>Libraries.php</li>
+           <li>Routing.php</li>
+           </ul>
+              <li>Views</li>
+                     <ul>
+      <li>Instances</li>
+                     <ul>
+      <li>Ajax</li>
+                       <ul>
+      <li>App-deploy</li>
+                   <ul>
+      <li>Deploy.php</li>
+         <li>Upload.php</li>
+         </ul>
+            <li>App-model</li>
+                             <ul>
+      <li>Get-jdb-tables.php</li>
+      </ul>
+            <li>App-views</li>
+                                         <ul>
+      <li>View.static.php</li>
+      </ul>
+      <li>Get-code</li>
+                                       <ul>
+      <li>Get-code.static.php</li>
+      </ul>
+            <li>Update.php</li>
+            </ul>
+                    <li>Editor</li>
+<ul>
+      <li>App-editor</li>
+      <ul>
+      <li>Body.php</li>
+      </ul>
+           <li>App.editor.php</li>
+           </ul>
+<li>Gateway</li>
+      <ul>
+      <li>Templates</li>
+           <ul>
+      <li>Body</li>
+       <ul>
+      <li>Login.php</li>
+      </ul>
+            <li>Footer</li>
+                 <ul>
+      <li>Footer.php</li>
+            </ul>
+               <li>Header</li>
+<ul>
+      <li>Header.php</li>
+      <li>Title.php</li>
+</ul>
+</ul>
+<li>Login.php</li>
+<li>Logout.php</li>
+</ul>
+<li>Panel</li>
+<ul>
+      <li>App-model</li>
+      <ul>
+      <li>Jdb</li>
+            <ul>
+      <li>Body.php</li>
+      </ul>
+      <li>App-model.php</li>
+      <li>Jdb-editor.php</li>
+            </ul>
+                  <li>App-view</li>
+                              <ul>
+      <li>Body.php</li>
+         </ul>
+         <li>Application</li>
+         <ul>
+      <li>Deployment</li>
+      <ul>
+      <li>Body.php</li>
+       </ul>
+          <li>Deployment.php</li>
+ </ul>
+<li>Dashboard</li>
+   <ul>
+      <li>Body.php</li>
+       </ul>
+<li>Profile</li>
+  <ul>
+      <li>Profile-body.php</li>
+</ul>
+<li>App-view.php</li>
+<li>Dashboard.php</li>
+<li>Profile.php</li>
+</ul>
+<li>Setup</li>
+<ul>
+      <li>Templates</li>
+      <ul>
+      <li>Body</li>
+      <ul>
+      <li>Db-setup.php</li>
+<li>Error.php</li>
+<li>Su-setup.php</li>
+<li>Welcome.php</li>
+</ul>
+ <li>Footer</li>
+ <ul>
+      <li>Footer.php</li>
+</ul>
+<li>Header</li>
+ <ul>
+      <li>Header.php</li>
+      <li>Title.php</li>
+</ul>
+</ul>
+<li>Install.php</li>
+</ul>
+<li>Templates</li>
+ <ul>
+      <li>Footer</li>
+       <ul>
+      <li>Footer.php</li>
+      </ul>
+      <li>Header</li>
+<ul>
+      <li>Header.php</li>
+      <li>Nav.php</li>
+</ul>
+</ul>
+<li>Utils</li>
+<ul>
+      <li>Maintenance.php</li>
+      <li>No-app.php</li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul>
+<li>Boot</li>
+<ul>
+      <li>Cyz-shutdown.php</li>
+      <li>Cyz-start.php</li>
+        <li>Start-app.php</li>
+      <li>Start-su-panel.php</li>
+</ul>
+</ul>
+<li>Comp</li>
+<ul>
+      <li>Core</li>
+      <ul>
+      <li>Functions</li>
+      <ul>
+      <li>Read-header.php</li>
+      </ul>
+      <li>Includes</li>
+        <ul>
+      <li>App.db.php</li>
+      </ul>
+      </ul>
+<li>Database</li>
+<ul>
+      <li>Base.php</li>
+      <li>Main.php</li>
+</ul>
+<li>Integration</li>
+<ul>
+      <li>App</li>
+      <ul>
+      <li>Compiler</li>
+      <ul>
+      <li>View.compiler.php</li>
+      </ul>
+      <li>Watcher</li>
+<ul>
+      <li>View.watcher.php</li>
+</ul>
+ <li>Main.php</li>
+ </ul>
+ </ul>
+ <li>Maintenance</li>
+ <ul>
+      <li>Functions.php</li>
+      <li>Main.php</li>
+      <li>Maintenance.php</li>
+</ul>
+<li>Sandbox</li>
+ <ul>
+      <li>Main.php</li>
+      <li>Update.app.php</li>
+</ul>
+<li>Templating</li>
+ <ul>
+	   <li>Hooks.php</li>
+      <li>Main.php</li>
+</ul>
+<li>Update</li>
+ <ul>
+      <li>Functions.php</li>
+      <li>Main.php</li>
+      <li>Update.php</li>
+</ul>
+<li>Base64.mod.php</li>
+</ul>
+<li>Lib</li>
+ <ul>
+	   <li>Cache</li>
+      <li>Cmd</li>
+       <ul>
+	   <li>Main.php</li>
+	   </ul>
+	   <li>File-management</li>
+	   <ul>
+	   <li>Main.php</li>
+	   </ul>
+	   <li>File-upload</li>
+	   <ul>
+	   <li>Main.php</li>
+	   </ul>
+	   <li>Form</li>
+	    <ul>
+	   <li>Main.php</li>
+	   </ul>
+	   <li>Jdb</li>
+	   	    <ul>
+	   <li>Base.php</li>
+	   <li>JDB.php</li>
+	   </ul>
+	   <li>Optimize</li>
+	     <ul>
+	   <li>Main.php</li>
+	   </ul>
+	      <li>Security</li>
+	           <ul>
+	   <li>Main.php</li>
+	   </ul>
+	    <li>Smtp</li>
+	     <ul>
+	   <li>Main.php</li>
+	   </ul>
+	   <li>Sniffer</li>
+	   <ul>
+	   <li>Main.php</li>
+	   </ul>
+	   <li>Usm</li>
+	   <ul>
+	   <li>Base.php</li>
+	   <li>Main.php</li>
+	   </ul>
+	    <li>Validator</li>
+	    <ul>
+	   <li>Character.php</li>
+	   <li>Input.php</li>
+	   </ul> 
+</ul>
+<li>Routing</li>
+ <ul>
+	   <li>Cyz-dir.php</li>
+	   <li>Cyz-junction.php</li>
+	   <li>Cyz-routing.php</li>
+	   <li>Cyz-url-fetch.php</li>
+	   <li>Cyz-url-rewrite.php</li>
+	   </ul> 
+	   <li>Cyz-version.php</li>
