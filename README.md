@@ -1,4 +1,4 @@
-# CYZER - Docs.
+# CYZER - DOCS.
 ![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg?style=flat-square) ![CircleCI](https://img.shields.io/circleci/project/github/barbajs/barba/master.svg?style=flat-square) ![Open Source Lovesvg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103) 
 ### What is Cyzer
 Cyzer is an OSS (Open Source Software). It is a minimalistic build PHP Framework for all types of modern application. It follows the MVC (Model View Controller) architecture.
