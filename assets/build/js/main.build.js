@@ -32,21 +32,47 @@ async function insert_header(){
 }
 
 
+async function insert_footer(){
+    try{
+        return $.ajax({
+            url: the_domain + '/templates/footer.html',
+            cache: false,
+            success: function(result){
+                $('footer').html(result);
+
+                return true;
+            }
+        });
+    } catch(err) {}
+
+    return false;
+}
+
+
 async function update_UI(){
-    var response = await insert_header();
+    var response_header = await insert_header();
 
-    if(response){
-        // True
+    // True - Header Loaded
+    if(response_header){
+        
+        // Load Footer
+        var response_footer = await insert_footer();
 
-        c_flag = 1;
-        functionSequence();
-    }
+        // True - Footer Loaded
+        if(response_footer){
+            c_flag = 1;
+            functionSequence();
+        } 
+    } 
 }
 
 
 
 function functionSequence() {
-    if(1 == c_flag) dropdown_menu();
+    if(1 == c_flag) {
+        dropdown_menu();
+        $('.loading-screen').remove();
+    }
     else update_UI();
 }
 
